@@ -1,0 +1,457 @@
+VERSION ""
+
+
+NS_ : 
+	NS_DESC_
+	CM_
+	BA_DEF_
+	BA_
+	VAL_
+	CAT_DEF_
+	CAT_
+	FILTER
+	BA_DEF_DEF_
+	EV_DATA_
+	ENVVAR_DATA_
+	SGTYPE_
+	SGTYPE_VAL_
+	BA_DEF_SGTYPE_
+	BA_SGTYPE_
+	SIG_TYPE_REF_
+	VAL_TABLE_
+	SIG_GROUP_
+	SIG_VALTYPE_
+	SIGTYPE_VALTYPE_
+	BO_TX_BU_
+	BA_DEF_REL_
+	BA_REL_
+	BA_DEF_DEF_REL_
+	BU_SG_REL_
+	BU_EV_REL_
+	BU_BO_REL_
+	SG_MUL_VAL_
+
+BS_:
+
+BU_: CAM TESTER RS VCU GW ESC ACU TCM RSRSL RSRS AVM
+VAL_TABLE_ RS_Sts_Failure 1 "Sensor Failure Occurred" 0 "No Sensor Failure Occured" ;
+
+
+BO_ 1629 RS_Obj_00_Part04: 8 Vector__XXX
+ SG_ RS_Obj00_Width : 15|8@0+ (0.2,0) [0|51] "" Vector__XXX
+ SG_ RS_Obj00_Length : 7|8@0+ (0.2,0) [0|51] "" Vector__XXX
+
+BO_ 1361 RS_detandobj_count: 8 RSRS
+ SG_ numTxObjs : 31|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ objNumEntries : 23|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ numTxdets : 15|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ detNumEntries : 7|8@0+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 482 PEPS_Message_Sts: 8 GW
+ SG_ PEPS_PowerModeValidity : 1|2@0+ (1,0) [0|3] "bit"  RS
+ SG_ PEPS_Message_Sts_Checksum : 63|8@0+ (1,0) [0|255] "bit"  RS
+ SG_ PEPS_Message_Sts_AliveCounter : 51|4@0+ (1,0) [0|15] "bit"  RS
+ SG_ PEPS_PowerMode : 4|3@0+ (1,0) [0|7] "bit"  RS
+
+BO_ 1937 DiagReq: 8 Vector__XXX
+ SG_ DiagReq_Byte7 : 63|8@0+ (1,0) [0|255] ""  RS
+ SG_ DiagReq_Byte6 : 55|8@0+ (1,0) [0|255] ""  RS
+ SG_ DiagReq_Byte5 : 47|8@0+ (1,0) [0|255] ""  RS
+ SG_ DiagReq_Byte4 : 39|8@0+ (1,0) [0|255] ""  RS
+ SG_ DiagReq_Byte3 : 31|8@0+ (1,0) [0|255] ""  RS
+ SG_ DiagReq_Byte2 : 23|8@0+ (1,0) [0|255] ""  RS
+ SG_ DiagReq_Byte1 : 15|8@0+ (1,0) [0|255] ""  RS
+ SG_ DiagReq_Byte0 : 7|8@0+ (1,0) [0|255] ""  RS
+
+BO_ 1945 DiagResp: 8 RS
+ SG_ DiagResp_Byte7 : 63|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ DiagResp_Byte6 : 55|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ DiagResp_Byte5 : 47|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ DiagResp_Byte4 : 39|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ DiagResp_Byte3 : 31|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ DiagResp_Byte2 : 23|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ DiagResp_Byte1 : 15|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ DiagResp_Byte0 : 7|8@0+ (1,0) [0|255] "" Vector__XXX
+
+BO_ 1360 RS_Status: 8 RS
+ SG_ RS_Latency : 23|8@0+ (0.005,0) [0|1.275] "s"  CAM
+ SG_ RS_Warn_RCW : 1|2@0+ (1,0) [0|3] "bit"  CAM
+ SG_ RS_Warn_SDO : 11|2@0+ (1,0) [0|3] "bit"  CAM
+ SG_ RS_Warn_RCTA : 9|2@0+ (1,0) [0|3] "bit"  CAM
+ SG_ RS_Warn_LCA : 13|2@0+ (1,0) [0|3] "bit"  CAM
+ SG_ RS_Warn_BSD : 15|2@0+ (1,0) [0|3] "bit"  CAM
+ SG_ RS_Sts_Interference : 6|1@0+ (1,0) [0|1] "bit"  CAM
+ SG_ RS_Sts_Blkg : 5|1@0+ (1,0) [0|1] "bit"  CAM
+ SG_ RS_Sts_MisAlign : 4|3@0+ (1,0) [0|7] "bit"  CAM
+ SG_ RS_Sts_Failure : 7|1@0+ (1,0) [0|1] "bit"  CAM
+ SG_ RS_Msg_CheckSum : 63|8@0+ (1,0) [0|255] "bit"  CAM
+ SG_ RS_Msg_AliveCounter : 51|4@0+ (1,0) [0|15] "bit"  CAM
+
+BO_ 2015 Func_DiagReq: 8 Vector__XXX
+ SG_ Func_DiagReq_Byte7 : 63|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ Func_DiagReq_Byte6 : 55|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ Func_DiagReq_Byte5 : 47|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ Func_DiagReq_Byte4 : 39|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ Func_DiagReq_Byte3 : 31|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ Func_DiagReq_Byte2 : 23|8@0+ (1,0) [0|255] ""  RS
+ SG_ Func_DiagReq_Byte0 : 7|8@0+ (1,0) [0|255] "" Vector__XXX
+
+BO_ 357 VCU_ModeControl: 8 VCU
+ SG_ VCU_ModeControl_CheckSum : 63|8@0+ (1,0) [0|255] "bit"  RS
+ SG_ VCU_ModeControl_AliveCounter : 51|4@0+ (1,0) [0|15] "bit"  RS
+ SG_ VCU_CurrentGearPosition : 23|4@0+ (1,0) [0|15] "bit"  RS
+
+BO_ 304 YRS1: 8 ACU
+ SG_ YRS1_CheckSum : 7|8@0+ (1,0) [0|255] "bit"  RS
+ SG_ YRS_LateralAcce : 23|16@0+ (0.001,-2) [-2|2] "g"  RS
+ SG_ YRS_YawRate : 39|16@0+ (0.01,-180) [-180|180] "ang/s"  RS
+ SG_ YRS1_AliveCounter : 59|4@0+ (1,0) [0|15] "bit"  RS
+ SG_ YRS_YawRateSensorState : 10|2@0+ (1,0) [0|3] "bit"  RS
+
+BO_ 305 YRS2: 8 ACU
+ SG_ YRS2_CheckSum : 7|8@0+ (1,0) [0|255] "bit"  RS
+ SG_ YRS_LongitAcce : 23|16@0+ (0.001,-2) [-2|2] "g"  RS
+ SG_ YRS2_AliveCounter : 59|4@0+ (1,0) [0|15] "bit"  RS
+
+BO_ 224 SAS_Status: 8 TCM
+ SG_ SAS_FailureSts : 31|1@0+ (1,0) [0|1] "bit"  RS
+ SG_ SAS_Status_AliveCounter : 39|4@0+ (1,0) [0|15] "bit"  RS
+ SG_ SAS_Status_CheckSum : 47|8@0+ (1,0) [0|255] "bit"  RS
+ SG_ SAS_SteerWheelAngle : 7|16@0- (0.1,0) [-780|779.9] "degree/bit"  RS
+
+BO_ 293 ESC_Status: 8 ESC
+ SG_ ESC_VehicleSpeedInvalid : 18|1@0+ (1,0) [0|1] "bit"  RS
+ SG_ ESC_VehicleSpeed : 15|13@0+ (0.05625,0) [0|460.63125] "KPH"  RS
+ SG_ ESC_Status_AliveCounter : 51|4@0+ (1,0) [0|15] "bit"  RS
+ SG_ ESC_Status_CheckSum : 63|8@0+ (1,0) [0|255] "bit"  RS
+
+BO_ 275 TCU_Status: 8 GW
+ SG_ TCU_Status_AliveCounter : 51|4@0+ (1,0) [0|15] "bit"  RS
+ SG_ TCU_CurrentGearPosition : 39|4@0+ (1,0) [0|15] "bit"  RS
+ SG_ TCU_Status_CheckSum : 63|8@0+ (1,0) [0|255] "bit"  RS
+
+BO_ 1370 RS_Detn_00_Part01: 8 RSRS
+ SG_ RS_Detn00_Magn : 47|10@0+ (0.1,0) [0|102.3] "dB"  CAM
+ SG_ RS_Detn00_Msg01_CheckSum : 63|8@0+ (1,0) [0|255] "bit"  CAM
+ SG_ RS_Detn00_Msg01_AliveCounter : 51|4@0+ (1,0) [0|15] "bit"  CAM
+ SG_ RS_Detn00_PosY : 31|14@0+ (0.02441,-200) [-200|199.90903] "m"  CAM
+ SG_ RS_Detn00_ID : 7|8@0+ (1,0) [0|255] "bit"  CAM
+ SG_ RS_Detn00_PosX : 15|14@0+ (0.02441,-200) [-200|199.90903] "m"  CAM
+
+BO_ 1371 RS_Detn_00_Part02: 8 RSRS
+ SG_ RS_Detn00_Elev : 28|5@0+ (1,-15) [-15|15] "Deg"  CAM
+ SG_ RS_Detn00_XVelRel : 23|11@0+ (0.1,-102.4) [-102.4|102.3] "m/s"  CAM
+ SG_ RS_Detn00_YVelRel : 39|11@0+ (0.1,-102.4) [-102.4|102.3] "m/s"  CAM
+ SG_ RS_Detn00_MotnSts : 55|2@0+ (1,0) [0|3] "bit"  CAM
+ SG_ RS_Detn00_Msg02_CheckSum : 63|8@0+ (1,0) [0|255] "bit"  CAM
+ SG_ RS_Detn00_Msg02_AliveCounter : 51|4@0+ (1,0) [0|15] "bit"  CAM
+ SG_ RS_Detn00_Qly : 7|16@0+ (1,0) [0|65535] "bit"  CAM
+
+BO_ 1626 RS_Obj_00_Part01: 8 RSRS
+ SG_ RS_Obj00_MeasFlag : 48|1@0+ (1,0) [0|1] "bit"  CAM
+ SG_ RS_Obj00_Type : 51|2@0+ (1,0) [0|3] "bit"  CAM
+ SG_ RS_Obj00_YPos : 39|14@0+ (0.02441,-200) [-200|199.90903] "m"  CAM
+ SG_ RS_Obj00_XPos : 23|14@0+ (0.02441,-200) [-200|199.90903] "m"  CAM
+ SG_ RS_Obj00_ElevConf : 41|2@0+ (1,0) [0|3] "bit"  CAM
+ SG_ RS_Obj00_ElevClass : 25|2@0+ (1,0) [0|3] "bit"  CAM
+ SG_ RS_Obj00_Msg01_AliveCounter : 55|4@0+ (1,0) [0|15] "bit"  CAM
+ SG_ RS_Obj00_Msg01_CheckSum : 63|8@0+ (1,0) [0|255] "bit"  CAM
+ SG_ RS_Obj00_MotionPattern : 10|3@0+ (1,0) [0|7] "bit"  CAM
+ SG_ RS_Obj00_ValidFlag : 49|1@0+ (1,0) [0|1] "bit"  CAM
+ SG_ RS_Obj00_ID : 7|13@0+ (1,0) [0|8191] "bit"  CAM
+
+BO_ 1627 RS_Obj_00_Part02: 8 RSRS
+ SG_ RS_Obj00_CtrkInd : 16|1@0+ (1,0) [0|1] "bit"  CAM
+ SG_ RS_Obj00_YVelAbsolute : 36|11@0+ (0.1,-102.4) [-102.4|102.3] "m/s"  CAM
+ SG_ RS_Obj00_XVelAbsolute : 31|11@0+ (0.1,-102.4) [-102.4|102.3] "m/s"  CAM
+ SG_ RS_Obj00_heading : 23|7@0- (0.049087,0.049087) [-3.092481|3.141568] "rad"  CAM
+ SG_ RS_Obj00_Classconf : 41|6@0+ (1.5873,0) [0|100] "%"  CAM
+ SG_ RS_Obj00_YAccAbsolute : 15|8@0+ (0.2,-25.6) [-25.6|25.4] "m/s2"  CAM
+ SG_ RS_Obj00_XAccAbsolute : 7|8@0+ (0.2,-25.6) [-25.6|25.4] "m/s2"  CAM
+ SG_ RS_Obj00_Msg02_CheckSum : 63|8@0+ (1,0) [0|255] "bit"  CAM
+ SG_ RS_Obj00_Msg02_AliveCounter : 51|4@0+ (1,0) [0|15] "bit"  CAM
+
+BO_ 1628 RS_Obj_00_Part03: 8 RSRS
+ SG_ RS_Obj00_ExstProb : 41|6@0+ (1,0) [0|63] "bit"  CAM
+ SG_ RS_Obj00_YAccRel_Stdev : 47|6@0+ (0.2,0) [0|12.6] "m/s2"  CAM
+ SG_ RS_Obj00_XAccRel_Stdev : 39|6@0+ (0.2,0) [0|12.6] "m/s2"  CAM
+ SG_ RS_Obj00_YVelRel_Stdev : 31|6@0+ (0.2,0) [0|12.6] "m/s"  CAM
+ SG_ RS_Obj00_XVelRel_Stdev : 23|6@0+ (0.2,0) [0|12.6] "m/s"  CAM
+ SG_ RS_Obj00_YPos_Stdev : 15|6@0+ (0.2,0) [0|12.6] "m"  CAM
+ SG_ RS_Obj00_XPos_Stdev : 7|6@0+ (0.2,0) [0|12.6] "m"  CAM
+ SG_ RS_Obj00_Msg03_CheckSum : 63|8@0+ (1,0) [0|255] "bit"  CAM
+ SG_ RS_Obj00_Msg03_AliveCounter : 51|4@0+ (1,0) [0|15] "bit"  CAM
+
+
+
+CM_ " ";
+CM_ BO_ 304 "Transmitted by ACU , including ACU YRS signals";
+CM_ SG_ 304 YRS1_CheckSum "YRS1_Checksum";
+CM_ SG_ 304 YRS_LateralAcce "Indicates Lateral Acceleration
+0x0FA1~0xFFFF: Invalid";
+CM_ SG_ 304 YRS_YawRate "Indicates Yaw Rate
+0x8CA1~0xFFFF: Invalid";
+CM_ SG_ 304 YRS1_AliveCounter "Indicates the message sending number";
+CM_ SG_ 304 YRS_YawRateSensorState "Indicates YawRate Sensor State";
+CM_ BO_ 305 "Transmitted by ACU , including ACU YRS signals";
+CM_ SG_ 305 YRS2_CheckSum "YRS2_CheckSum";
+CM_ SG_ 305 YRS_LongitAcce "Indicates Longitudinal Acceleration
+0x0FA1~0xFFFF: Invalid";
+CM_ SG_ 305 YRS2_AliveCounter "Indicates the message sending number";
+CM_ BO_ 224 "Transmitted by SAS, including SAS sensor status singals";
+CM_ SG_ 224 SAS_FailureSts "SAS failure status";
+CM_ SG_ 224 SAS_Status_AliveCounter "Message counter";
+CM_ SG_ 224 SAS_Status_CheckSum "SAS_Status checksum ";
+CM_ SG_ 224 SAS_SteerWheelAngle "Actual steering wheel angle";
+CM_ BO_ 293 "Transmitted by ESC, including ESC status ,Vehicle Speed and Brake switch status";
+CM_ SG_ 293 ESC_VehicleSpeedInvalid "Signal from ABS_ESC to indicate if VehicleSpeed is valid";
+CM_ SG_ 293 ESC_VehicleSpeed "Vehicle Speed";
+CM_ SG_ 293 ESC_Status_AliveCounter "Message Rolling counter";
+CM_ SG_ 293 ESC_Status_CheckSum "ESC_Status checksum ";
+CM_ BO_ 275 "Transmitted by TCU, including TCU req and states";
+CM_ SG_ 275 TCU_CurrentGearPosition "TCU current Gear status";
+CM_ SG_ 275 TCU_Status_CheckSum "TCU_Status checksum ";
+BA_DEF_ SG_  "CustomizedSignalType" ENUM  "Norm","CRC","ALC","vector_leerstring";
+BA_DEF_  "NmAsrWaitBusSleepTime" INT 0 65535;
+BA_DEF_  "NmAsrTimeoutTime" INT 0 65535;
+BA_DEF_  "NmAsrRepeatMessageTime" INT 0 65535;
+BA_DEF_ BU_  "NmAsrNodeIdentifier" INT 0 255;
+BA_DEF_ BU_  "NmAsrNode" ENUM  "no","yes";
+BA_DEF_  "NmAsrMessageCount" INT 0 256;
+BA_DEF_ BO_  "NmAsrMessage" ENUM  "no","yes";
+BA_DEF_ BU_  "NmAsrCanMsgReducedTime" INT 0 65535;
+BA_DEF_  "NmAsrCanMsgCycleTime" INT 0 65535;
+BA_DEF_ BU_  "NmAsrCanMsgCycleOffset" INT 0 65535;
+BA_DEF_  "NmAsrBaseAddress" HEX 0 65535;
+BA_DEF_ BO_  "DiagState" ENUM  "No","Yes";
+BA_DEF_ BO_  "DiagRequest" ENUM  "No","Yes";
+BA_DEF_ BO_  "DiagResponse" ENUM  "No","Yes";
+BA_DEF_ BO_  "GenMsgSendType" ENUM  "Cyclic","NotUsed","NotUsed","NotUsed","NotUsed","NotUsed","NotUsed","NotUsed","NoMsgSendType";
+BA_DEF_ BO_  "GenMsgCycleTime" INT 0 0;
+BA_DEF_ SG_  "GenSigSendType" ENUM  "Cyclic","OnWrite","NotUsed","OnChange","NotUsed","NotUsed","NotUsed","NoSigSendType";
+BA_DEF_ SG_  "GenSigStartValue" INT 0 0;
+BA_DEF_ SG_  "GenSigInactiveValue" INT 0 0;
+BA_DEF_ BO_  "GenMsgCycleTimeFast" INT 0 0;
+BA_DEF_ BO_  "GenMsgNrOfRepetition" INT 0 0;
+BA_DEF_ BO_  "GenMsgDelayTime" INT 0 0;
+BA_DEF_  "DBName" STRING ;
+BA_DEF_ BU_  "NodeLayerModules" STRING ;
+BA_DEF_ SG_  "GenSigTimeoutValue" INT 0 1000000000;
+BA_DEF_ BO_  "GenMsgCycleTimeActive" INT 0 0;
+BA_DEF_ BU_  "ILUsed" ENUM  "No","Yes";
+BA_DEF_ BU_  "DiagStationAddress" HEX 0 255;
+BA_DEF_  "Manufacturer" STRING ;
+BA_DEF_  "NmType" STRING ;
+BA_DEF_ BO_  "GenMsgILSupport" ENUM  "No","Yes";
+BA_DEF_ BO_  "GenMsgStartDelayTime" INT 0 65535;
+BA_DEF_  "BusType" STRING ;
+BA_DEF_ BO_  "VFrameFormat" ENUM  "StandardCAN","ExtendedCAN","reserved","reserved","reserved","reserved","reserved","reserved","reserved","reserved","reserved","reserved","reserved","reserved","StandardCAN_FD","ExtendedCAN_FD";
+BA_DEF_DEF_  "CustomizedSignalType" "Norm";
+BA_DEF_DEF_  "NmAsrWaitBusSleepTime" 750;
+BA_DEF_DEF_  "NmAsrTimeoutTime" 1000;
+BA_DEF_DEF_  "NmAsrRepeatMessageTime" 400;
+BA_DEF_DEF_  "NmAsrNodeIdentifier" 0;
+BA_DEF_DEF_  "NmAsrNode" "yes";
+BA_DEF_DEF_  "NmAsrMessageCount" 64;
+BA_DEF_DEF_  "NmAsrMessage" "no";
+BA_DEF_DEF_  "NmAsrCanMsgReducedTime" 50;
+BA_DEF_DEF_  "NmAsrCanMsgCycleTime" 100;
+BA_DEF_DEF_  "NmAsrCanMsgCycleOffset" 0;
+BA_DEF_DEF_  "NmAsrBaseAddress" 1024;
+BA_DEF_DEF_  "DiagState" "No";
+BA_DEF_DEF_  "DiagRequest" "No";
+BA_DEF_DEF_  "DiagResponse" "No";
+BA_DEF_DEF_  "GenMsgSendType" "NoMsgSendType";
+BA_DEF_DEF_  "GenMsgCycleTime" 0;
+BA_DEF_DEF_  "GenSigSendType" "Cyclic";
+BA_DEF_DEF_  "GenSigStartValue" 0;
+BA_DEF_DEF_  "GenSigInactiveValue" 0;
+BA_DEF_DEF_  "GenMsgCycleTimeFast" 0;
+BA_DEF_DEF_  "GenMsgNrOfRepetition" 0;
+BA_DEF_DEF_  "GenMsgDelayTime" 0;
+BA_DEF_DEF_  "DBName" "";
+BA_DEF_DEF_  "NodeLayerModules" "CANoeILNLVector.dll";
+BA_DEF_DEF_  "GenSigTimeoutValue" 0;
+BA_DEF_DEF_  "GenMsgCycleTimeActive" 0;
+BA_DEF_DEF_  "ILUsed" "Yes";
+BA_DEF_DEF_  "DiagStationAddress" 0;
+BA_DEF_DEF_  "Manufacturer" "";
+BA_DEF_DEF_  "NmType" "";
+BA_DEF_DEF_  "GenMsgILSupport" "Yes";
+BA_DEF_DEF_  "GenMsgStartDelayTime" 0;
+BA_DEF_DEF_  "BusType" "CAN";
+BA_DEF_DEF_  "VFrameFormat" "";
+BA_ "Manufacturer" "vector";
+BA_ "BusType" "CAN";
+BA_ "NmType" "NmAsr";
+BA_ "NmAsrWaitBusSleepTime" 2000;
+BA_ "NmAsrTimeoutTime" 2000;
+BA_ "NmAsrRepeatMessageTime" 1600;
+BA_ "NmAsrCanMsgCycleTime" 500;
+BA_ "NmAsrMessageCount" 128;
+BA_ "DBName" "ChassisCAN";
+BA_ "NmAsrCanMsgReducedTime" BU_ RS 250;
+BA_ "NmAsrNodeIdentifier" BU_ RS 40;
+BA_ "VFrameFormat" BO_ 1629 0;
+BA_ "GenMsgCycleTime" BO_ 1629 50;
+BA_ "GenMsgSendType" BO_ 1629 0;
+BA_ "VFrameFormat" BO_ 1361 0;
+BA_ "GenMsgCycleTime" BO_ 1361 50;
+BA_ "GenMsgSendType" BO_ 482 0;
+BA_ "GenMsgCycleTime" BO_ 482 20;
+BA_ "DiagRequest" BO_ 1937 1;
+BA_ "DiagResponse" BO_ 1945 1;
+BA_ "VFrameFormat" BO_ 1360 0;
+BA_ "GenMsgSendType" BO_ 1360 0;
+BA_ "GenMsgCycleTime" BO_ 1360 50;
+BA_ "DiagState" BO_ 2015 1;
+BA_ "DiagRequest" BO_ 2015 1;
+BA_ "GenMsgILSupport" BO_ 2015 0;
+BA_ "GenMsgCycleTime" BO_ 357 20;
+BA_ "GenMsgSendType" BO_ 357 0;
+BA_ "GenMsgCycleTime" BO_ 304 20;
+BA_ "GenMsgSendType" BO_ 304 0;
+BA_ "GenMsgCycleTime" BO_ 305 20;
+BA_ "GenMsgSendType" BO_ 305 0;
+BA_ "GenMsgCycleTime" BO_ 224 10;
+BA_ "GenMsgSendType" BO_ 224 0;
+BA_ "GenMsgCycleTime" BO_ 293 20;
+BA_ "GenMsgSendType" BO_ 293 0;
+BA_ "GenMsgCycleTime" BO_ 275 20;
+BA_ "GenMsgSendType" BO_ 275 0;
+BA_ "GenMsgCycleTime" BO_ 1370 50;
+BA_ "GenMsgSendType" BO_ 1370 0;
+BA_ "VFrameFormat" BO_ 1370 0;
+BA_ "GenMsgSendType" BO_ 1371 0;
+BA_ "GenMsgCycleTime" BO_ 1371 50;
+BA_ "VFrameFormat" BO_ 1371 0;
+BA_ "GenMsgCycleTime" BO_ 1626 50;
+BA_ "GenMsgSendType" BO_ 1626 0;
+BA_ "VFrameFormat" BO_ 1626 0;
+BA_ "GenMsgCycleTime" BO_ 1627 50;
+BA_ "GenMsgSendType" BO_ 1627 0;
+BA_ "VFrameFormat" BO_ 1627 0;
+BA_ "GenMsgCycleTime" BO_ 1628 50;
+BA_ "GenMsgSendType" BO_ 1628 0;
+BA_ "VFrameFormat" BO_ 1628 0;
+BA_ "CustomizedSignalType" SG_ 482 PEPS_Message_Sts_Checksum 1;
+BA_ "CustomizedSignalType" SG_ 482 PEPS_Message_Sts_AliveCounter 2;
+BA_ "GenSigSendType" SG_ 1937 DiagReq_Byte7 2;
+BA_ "GenSigSendType" SG_ 1937 DiagReq_Byte6 2;
+BA_ "GenSigSendType" SG_ 1937 DiagReq_Byte5 2;
+BA_ "GenSigSendType" SG_ 1937 DiagReq_Byte4 2;
+BA_ "GenSigSendType" SG_ 1937 DiagReq_Byte3 2;
+BA_ "GenSigSendType" SG_ 1937 DiagReq_Byte2 2;
+BA_ "GenSigSendType" SG_ 1937 DiagReq_Byte1 2;
+BA_ "GenSigSendType" SG_ 1937 DiagReq_Byte0 2;
+BA_ "GenSigSendType" SG_ 1945 DiagResp_Byte7 2;
+BA_ "GenSigSendType" SG_ 1945 DiagResp_Byte6 2;
+BA_ "GenSigSendType" SG_ 1945 DiagResp_Byte5 2;
+BA_ "GenSigSendType" SG_ 1945 DiagResp_Byte4 2;
+BA_ "GenSigSendType" SG_ 1945 DiagResp_Byte3 2;
+BA_ "GenSigSendType" SG_ 1945 DiagResp_Byte2 2;
+BA_ "GenSigSendType" SG_ 1945 DiagResp_Byte1 2;
+BA_ "GenSigSendType" SG_ 1945 DiagResp_Byte0 2;
+BA_ "CustomizedSignalType" SG_ 1360 RS_Msg_CheckSum 1;
+BA_ "CustomizedSignalType" SG_ 1360 RS_Msg_AliveCounter 2;
+BA_ "GenSigSendType" SG_ 2015 Func_DiagReq_Byte7 2;
+BA_ "GenSigSendType" SG_ 2015 Func_DiagReq_Byte6 2;
+BA_ "GenSigSendType" SG_ 2015 Func_DiagReq_Byte5 2;
+BA_ "GenSigSendType" SG_ 2015 Func_DiagReq_Byte4 2;
+BA_ "GenSigSendType" SG_ 2015 Func_DiagReq_Byte3 2;
+BA_ "GenSigSendType" SG_ 2015 Func_DiagReq_Byte2 2;
+BA_ "GenSigSendType" SG_ 2015 Func_DiagReq_Byte0 2;
+BA_ "CustomizedSignalType" SG_ 357 VCU_ModeControl_CheckSum 1;
+BA_ "CustomizedSignalType" SG_ 357 VCU_ModeControl_AliveCounter 2;
+BA_ "GenSigInactiveValue" SG_ 357 VCU_CurrentGearPosition 15;
+BA_ "GenSigStartValue" SG_ 357 VCU_CurrentGearPosition 15;
+BA_ "GenSigStartValue" SG_ 304 YRS_YawRateSensorState 3;
+BA_ "CustomizedSignalType" SG_ 224 SAS_Status_AliveCounter 2;
+BA_ "CustomizedSignalType" SG_ 224 SAS_Status_CheckSum 1;
+BA_ "GenSigInactiveValue" SG_ 224 SAS_SteerWheelAngle 32767;
+BA_ "GenSigInactiveValue" SG_ 293 ESC_VehicleSpeedInvalid 1;
+BA_ "CustomizedSignalType" SG_ 293 ESC_Status_AliveCounter 2;
+BA_ "CustomizedSignalType" SG_ 293 ESC_Status_CheckSum 1;
+BA_ "CustomizedSignalType" SG_ 275 TCU_Status_AliveCounter 2;
+BA_ "GenSigInactiveValue" SG_ 275 TCU_CurrentGearPosition 15;
+BA_ "GenSigStartValue" SG_ 275 TCU_CurrentGearPosition 15;
+BA_ "CustomizedSignalType" SG_ 275 TCU_Status_CheckSum 1;
+BA_ "GenSigStartValue" SG_ 1370 RS_Detn00_PosY 8193.36337566571;
+BA_ "GenSigStartValue" SG_ 1370 RS_Detn00_PosX 8193.36337566571;
+BA_ "GenSigStartValue" SG_ 1371 RS_Detn00_Elev 15;
+BA_ "GenSigStartValue" SG_ 1371 RS_Detn00_XVelRel 0;
+BA_ "GenSigStartValue" SG_ 1371 RS_Detn00_YVelRel 0;
+BA_ "GenSigStartValue" SG_ 1371 RS_Detn00_MotnSts 3;
+BA_ "GenSigStartValue" SG_ 1626 RS_Obj00_MeasFlag 1;
+BA_ "GenSigStartValue" SG_ 1626 RS_Obj00_Type 0;
+BA_ "GenSigStartValue" SG_ 1626 RS_Obj00_YPos 8193.36337566571;
+BA_ "GenSigStartValue" SG_ 1626 RS_Obj00_XPos 8193.36337566571;
+BA_ "GenSigStartValue" SG_ 1626 RS_Obj00_ElevConf 0;
+BA_ "GenSigStartValue" SG_ 1626 RS_Obj00_ElevClass 0;
+BA_ "GenSigStartValue" SG_ 1626 RS_Obj00_Msg01_AliveCounter 0;
+BA_ "GenSigStartValue" SG_ 1626 RS_Obj00_MotionPattern 0;
+BA_ "GenSigStartValue" SG_ 1626 RS_Obj00_ValidFlag 0;
+BA_ "GenSigStartValue" SG_ 1626 RS_Obj00_ID 8191;
+BA_ "GenSigStartValue" SG_ 1627 RS_Obj00_CtrkInd 0;
+BA_ "GenSigStartValue" SG_ 1627 RS_Obj00_YVelAbsolute 0;
+BA_ "GenSigStartValue" SG_ 1627 RS_Obj00_XVelAbsolute 0;
+BA_ "GenSigStartValue" SG_ 1627 RS_Obj00_heading -1;
+BA_ "GenSigStartValue" SG_ 1627 RS_Obj00_Classconf 0;
+BA_ "GenSigStartValue" SG_ 1627 RS_Obj00_YAccAbsolute 0;
+BA_ "GenSigStartValue" SG_ 1627 RS_Obj00_XAccAbsolute 0;
+BA_ "GenSigStartValue" SG_ 1627 RS_Obj00_Msg02_CheckSum 0;
+BA_ "GenSigStartValue" SG_ 1627 RS_Obj00_Msg02_AliveCounter 0;
+BA_ "GenSigStartValue" SG_ 1628 RS_Obj00_ExstProb 0;
+BA_ "GenSigStartValue" SG_ 1628 RS_Obj00_YAccRel_Stdev 0;
+BA_ "GenSigStartValue" SG_ 1628 RS_Obj00_XAccRel_Stdev 0;
+BA_ "GenSigStartValue" SG_ 1628 RS_Obj00_YVelRel_Stdev 0;
+BA_ "GenSigStartValue" SG_ 1628 RS_Obj00_XVelRel_Stdev 0;
+BA_ "GenSigStartValue" SG_ 1628 RS_Obj00_YPos_Stdev 0;
+BA_ "GenSigStartValue" SG_ 1628 RS_Obj00_XPos_Stdev 0;
+BA_ "GenSigStartValue" SG_ 1628 RS_Obj00_Msg03_CheckSum 0;
+BA_ "GenSigStartValue" SG_ 1628 RS_Obj00_Msg03_AliveCounter 0;
+VAL_ 482 PEPS_PowerModeValidity 3 "Reserved" 2 "Valid" 1 "Invalid" 0 "Not Available" ;
+VAL_ 482 PEPS_PowerMode 4 "START" 3 "Reserved" 2 "ON" 1 "ACC" 0 "OFF" ;
+VAL_ 1360 RS_Warn_RCW 2 "Warning Level 2" 1 "Warning Level 1" 0 "No Warning" ;
+VAL_ 1360 RS_Warn_SDO 2 "Warning Level 2" 1 "Warning Level 1" 0 "No Warning" ;
+VAL_ 1360 RS_Warn_RCTA 2 "Warning Level 2" 1 "Warning Level 1" 0 "No Warning" ;
+VAL_ 1360 RS_Warn_LCA 2 "Warning Level 2" 1 "Warning Level 1" 0 "No Warning" ;
+VAL_ 1360 RS_Warn_BSD 2 "Warning Level 2" 1 "Warning Level 1" 0 "No Warning" ;
+VAL_ 1360 RS_Sts_Interference 1 "RS is interfered" 0 "RS is not interfered" ;
+VAL_ 1360 RS_Sts_Blkg 1 "RS is blocked" 0 "RS is NOT blocked" ;
+VAL_ 1360 RS_Sts_MisAlign 5 "reserved" 4 "reserved" 3 "Sensor Misalignment Detected" 2 "Sensor Calibrated" 1 "Sensor Not Calibrated" 0 "Sensor In Default Condition" ;
+VAL_ 1360 RS_Sts_Failure 1 "Sensor Failure Occurred" 0 "No Sensor Failure Occured" ;
+VAL_ 357 VCU_CurrentGearPosition 15 "Invalid" 12 "Current gear D" 11 "Current gear Reverse" 10 "Park" 0 "Current gear N" ;
+VAL_ 304 YRS_LateralAcce 65535 "Invalid" ;
+VAL_ 304 YRS_YawRate 65535 "Invalid" ;
+VAL_ 304 YRS_YawRateSensorState 3 "Initializing" 2 "Reserved" 1 "Invalid" 0 "Valid" ;
+VAL_ 305 YRS_LongitAcce 65535 "Invalid" ;
+VAL_ 224 SAS_FailureSts 1 "Valid" 0 "Invalid" ;
+VAL_ 224 SAS_SteerWheelAngle 32767 "Invalid" ;
+VAL_ 293 ESC_VehicleSpeedInvalid 1 "Invalid" 0 "Valid" ;
+VAL_ 293 ESC_VehicleSpeed 8190 "Abnormal" 8191 "Invalid value" ;
+VAL_ 275 TCU_CurrentGearPosition 15 "Invalid" 11 "Current gear Reverse" 10 "Park" 7 "Current gear 7(6AT Reserved)" 6 "Current gear 6" 5 "Current gear 5" 4 "Current gear 4" 3 "Current gear 3" 2 "Current gear 2" 1 "Current gear 1" 0 "Current gear N" ;
+VAL_ 1371 RS_Detn00_MotnSts 3 "MotionSts_Invalid" 2 "MotionSts_Staty" 1 "MotionSts_Movg" 0 "MotionSts_Ukwn" ;
+VAL_ 1626 RS_Obj00_MeasFlag 1 "Obj extrapolated in this cycle" 0 "Object measured in this cycle" ;
+VAL_ 1626 RS_Obj00_Type 3 "Pedestrian" 2 "2 wheeler" 1 "4 wheeler" 0 "Unknown" ;
+VAL_ 1626 RS_Obj00_ElevConf 3 "High Quality" 2 "Medium Quality" 1 "Low Quality" 0 "No Quality" ;
+VAL_ 1626 RS_Obj00_ElevClass 3 "Relevant" 2 "Overridable" 1 "Underrunnable" 0 "Unknow" ;
+VAL_ 1626 RS_Obj00_MotionPattern 7 "Reserved" 6 "Reserved" 5 "Reserved" 4 "Reserved" 3 "Moving" 2 "Stopped" 1 "Stationary" 0 "Unknown" ;
+VAL_ 1626 RS_Obj00_ValidFlag 1 "Object valid" 0 "Object invalid" ;
+VAL_ 1626 RS_Obj00_ID 8191 "Invalid" ;
+VAL_ 1627 RS_Obj00_CtrkInd 1 "Cluster tracker" 0 "Stationary tracker" ;
+SIG_GROUP_ 1629 Obj00Part04_Grp 1 : RS_Obj00_Length RS_Obj00_Width;
+SIG_GROUP_ 482 PowerMode_Grp 1 : PEPS_Message_Sts_AliveCounter PEPS_Message_Sts_Checksum PEPS_PowerModeValidity PEPS_PowerMode;
+SIG_GROUP_ 1360 RSStatus_Grp 1 : RS_Latency RS_Warn_RCW RS_Warn_SDO RS_Warn_RCTA RS_Warn_LCA RS_Warn_BSD RS_Sts_Interference RS_Sts_Blkg RS_Sts_MisAlign RS_Sts_Failure RS_Msg_CheckSum RS_Msg_AliveCounter;
+SIG_GROUP_ 357 GearPosition_Grp 1 : VCU_ModeControl_AliveCounter VCU_ModeControl_CheckSum VCU_CurrentGearPosition;
+SIG_GROUP_ 304 YawRate_Grp 1 : YRS1_CheckSum YRS_LateralAcce YRS_YawRate YRS1_AliveCounter YRS_YawRateSensorState;
+SIG_GROUP_ 305 LongitAcce_Grp 1 : YRS2_CheckSum YRS_LongitAcce YRS2_AliveCounter;
+SIG_GROUP_ 224 SteerWheelAngle_Grp 1 : SAS_FailureSts SAS_Status_AliveCounter SAS_Status_CheckSum SAS_SteerWheelAngle;
+SIG_GROUP_ 293 VehicleSpeed_Grp 1 : ESC_VehicleSpeedInvalid ESC_VehicleSpeed ESC_Status_AliveCounter ESC_Status_CheckSum;
+SIG_GROUP_ 275 GearPosition_Grp 1 : TCU_Status_AliveCounter TCU_CurrentGearPosition TCU_Status_CheckSum;
+SIG_GROUP_ 1370 Detn00Part01_Grp 1 : RS_Detn00_Magn RS_Detn00_Msg01_CheckSum RS_Detn00_Msg01_AliveCounter RS_Detn00_PosY RS_Detn00_ID RS_Detn00_PosX;
+SIG_GROUP_ 1371 Detn00Part02_Grp 1 : RS_Detn00_Elev RS_Detn00_YVelRel RS_Detn00_XVelRel RS_Detn00_MotnSts RS_Detn00_Msg02_CheckSum RS_Detn00_Msg02_AliveCounter RS_Detn00_Qly;
+SIG_GROUP_ 1626 Obj00Part01_Grp 1 : RS_Obj00_Msg01_AliveCounter RS_Obj00_Msg01_CheckSum RS_Obj00_Type RS_Obj00_MeasFlag RS_Obj00_YPos RS_Obj00_XPos RS_Obj00_ElevConf RS_Obj00_ElevClass RS_Obj00_MotionPattern RS_Obj00_ValidFlag RS_Obj00_ID;
+SIG_GROUP_ 1627 Obj00Part02_Grp 1 : RS_Obj00_Msg02_CheckSum RS_Obj00_Msg02_AliveCounter RS_Obj00_XAccAbsolute RS_Obj00_YAccAbsolute RS_Obj00_Classconf RS_Obj00_heading RS_Obj00_XVelAbsolute RS_Obj00_YVelAbsolute RS_Obj00_CtrkInd;
+SIG_GROUP_ 1628 Obj00Part03_Grp 1 : RS_Obj00_Msg03_CheckSum RS_Obj00_Msg03_AliveCounter RS_Obj00_XPos_Stdev RS_Obj00_YPos_Stdev RS_Obj00_XVelRel_Stdev RS_Obj00_YVelRel_Stdev RS_Obj00_XAccRel_Stdev RS_Obj00_YAccRel_Stdev RS_Obj00_ExstProb;
+
