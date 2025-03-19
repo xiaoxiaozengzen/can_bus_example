@@ -1,0 +1,11 @@
+[Unit]
+Description=Setup Can
+After=syslog.target  network.target
+Wants=network.target
+
+[Service]
+Type=oneshot
+ExecStart=/bin/bash -c ~/radar_can_init.sh
+
+[Install]
+WantedBy=multi-user.target
